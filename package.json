@@ -1,6 +1,6 @@
 {
   "name": "tree-view-sortable",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "main": "./lib/main",
   "description": "Explore, sort and open files in the current project.",
   "repository": "https://github.com/autonome/tree-view-sortable",
