@@ -2,13 +2,13 @@
   {
     'label': 'View'
     'submenu': [
-      { 'label': 'Toggle Tree View', 'command': 'tree-view:toggle' }
+      { 'label': 'Toggle Tree View Sortable', 'command': 'tree-view:toggle' }
     ]
   }
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'Tree View'
+      'label': 'Tree View Sortable'
       'submenu': [
         { 'label': 'Focus', 'command': 'tree-view:toggle-focus' }
         { 'label': 'Toggle', 'command': 'tree-view:toggle' }
@@ -34,6 +34,11 @@
     {'type': 'separator'}
 
     {'label': 'Add Project Folder', 'command': 'application:add-project-folder'}
+    {'type': 'separator'}
+
+    {'label': 'Sort by name', 'command': 'tree-view:sort-by-name'}
+    {'label': 'Sort by mtime', 'command': 'tree-view:sort-by-modified'}
+    {'label': 'Hand down sort mode to children', 'command': 'tree-view:sort-clear-children'}
     {'type': 'separator'}
 
     {'label': 'Copy Full Path', 'command': 'tree-view:copy-full-path'}
@@ -91,12 +96,12 @@
   ]
 
   'atom-pane[data-active-item-path] .item-views': [
-    {'label': 'Reveal in Tree View', 'command': 'tree-view:reveal-active-file'}
+    {'label': 'Reveal in Tree View Sortable', 'command': 'tree-view:reveal-active-file'}
   ]
 
   'atom-pane[data-active-item-path] .tab.active': [
     {'label': 'Rename', 'command': 'tree-view:rename'}
-    {'label': 'Reveal in Tree View', 'command': 'tree-view:reveal-active-file'}
+    {'label': 'Reveal in Tree View Sortable', 'command': 'tree-view:reveal-active-file'}
   ]
 
   '.platform-darwin atom-pane[data-active-item-path] .tab.active': [

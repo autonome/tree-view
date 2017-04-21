@@ -1,9 +1,9 @@
 {
-  "name": "tree-view",
-  "version": "0.216.1",
+  "name": "tree-view-sortable",
+  "version": "0.0.0",
   "main": "./lib/main",
-  "description": "Explore and open files in the current project.",
-  "repository": "https://github.com/atom/tree-view",
+  "description": "Explore, sort and open files in the current project.",
+  "repository": "https://github.com/autonome/tree-view-sortable",
   "license": "MIT",
   "engines": {
     "atom": "*"
